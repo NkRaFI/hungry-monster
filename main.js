@@ -21,9 +21,9 @@ const getData = getMeals => {
         const mealName = items.strMeal;
         const mealImg = items.strMealThumb;
         const showMeal = `
-            <div id="food-card" onclick="showFoodDetails('${mealName}')")">
-                <img class="img-fluid" src="${mealImg}">
-                <h4>${mealName}</h4>
+            <div id="food-card" class="bg-dark rounded mb-5" onclick="showFoodDetails('${mealName}')")">
+                <img class="img-fluid rounded" src="${mealImg}">
+                <h4 class="p-2 text-white">${mealName}</h4>
             </div>
         `
 
@@ -51,14 +51,16 @@ const getDetails = details => {
         const mealName = item.strMeal;
         const mealImg = item.strMealThumb;
         const listItems = `
-            <div class="details-style">
+            <div class="bg-dark rounded">
                 <img class="img-fluid" src="${mealImg}">
-                <h4>${mealName}</h4>
-                <li>${strIngredient1}</li>
-                <li>${strIngredient2}</li>
-                <li>${strIngredient3}</li>
-                <li>${strIngredient4}</li>
-                <li>${strIngredient5}</li>
+                <div class="p-3 text-white">
+                    <h4>${mealName}</h4>
+                    <li>${strIngredient1}</li>
+                    <li>${strIngredient2}</li>
+                    <li>${strIngredient3}</li>
+                    <li>${strIngredient4}</li>
+                    <li>${strIngredient5}</li>
+                </div>
             </div>
         `;
         const detailsDiv = document.getElementById("details");
