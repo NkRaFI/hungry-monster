@@ -16,3 +16,6 @@ img{
     border-radius: 5px;
     margin: 10px;
 }
+.details-style li{
+    list-style: none;
+}
