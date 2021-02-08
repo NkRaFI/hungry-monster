@@ -29,7 +29,7 @@ const getData = getMeals => {
 
         //getting dom elements and adding template and element to it
         const div = document.createElement("div");
-        div.className = "col-md-4"
+        div.className = "col-md-3"
         div.innerHTML = showMeal;
 
         mainBody.appendChild(div);
